@@ -1,0 +1,22 @@
+{
+  "status": "freeze_after_five_pilots",
+  "policy": "act",
+  "budgets": [5, 25],
+  "seeds_planned": [0, 1, 2],
+  "camera_features": ["observation.images.cam_high", "observation.images.cam_front"],
+  "state_dimension": 14,
+  "action_dimension": 14,
+  "action_label": "action_sent",
+  "chunk_size_initial_candidate": 30,
+  "n_action_steps_initial_candidate": 1,
+  "visual_initialization": {
+    "value": null,
+    "required_before_training": true,
+    "note": "Record the exact weights/revision and source; do not infer 'no external data'."
+  },
+  "notes": [
+    "Freeze image preprocessing, chunk duration, optimizer, update budget and checkpoint-selection rule before final evaluation.",
+    "Use development positions for integration and checkpoint selection; never select on test positions.",
+    "A failed integration or visibly underfit run is not evidence against ACT."
+  ]
+}

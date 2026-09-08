@@ -1,0 +1,8 @@
+# Project-scoped documentation MCP servers.
+# No tokens belong in this file; Hugging Face uses its own OAuth login when needed.
+
+[mcp_servers.trossenai]
+url = "https://mcp.docs.trossenrobotics.com/mcp"
+
+[mcp_servers.huggingface]
+url = "https://huggingface.co/mcp"
